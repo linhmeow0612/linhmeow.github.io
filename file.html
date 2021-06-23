@@ -1,0 +1,62 @@
+<!DOCTYPE html>   
+<html>
+    <head>
+         <title>Class Attribute</title>
+         <style>
+             .dautrang{
+                padding: 20px;
+                border: 3px solid powderblue;
+                color:palevioletred;
+                float: inherit;
+                margin-top: 10px;
+             }
+             .giuatrang{
+                padding: 20px;
+                border: 3px solid palevioletred;
+                color:orange;
+                float: inherit;
+                margin-top: 10px;  
+             }
+             .giuaTrang{
+                padding: 20px;
+                border: 3px solid brown;
+                color:mediumpurple;
+                float: inherit;
+                margin-top: 10px;  
+             }
+         </style>
+    </head>
+    <body>
+        <p>
+            <div class="dautrang">
+                <h1> This is top of page</h1>
+                <img src="123.jpg" width="700" height="480px" alt="Cong tac">
+            </div>
+            <div class="giuatrang">
+                <h1>That picture is so beautiful</h1>
+                <img src="yzt.jpg" width="700" height="480px" alt="Cong tac">
+            </div>
+            <div class="dautrang giuatrang">
+                <h2>Tran Mai Linh</h2>
+            
+            </div>
+            <div class="giuaTrang"> 
+                <h3>Class 11A</h3>
+                <img src="0.jpg" width="700" height="480px" alt="Cong tac">
+            </div>
+        </p>
+        <br>
+        <script>
+            function show(){
+                var x=document.getElementsByClassName("city");
+                for (var i=0;i <=x.length; i++){
+                    x[i].style.display="none";
+                }
+            }
+        </script>
+        <button onclick="show();">city:Hanoi</button>
+        <p class="city">Hanoi is the capital of Vietnam</p>
+        <br>
+        <br>
+    </body>
+</html>       

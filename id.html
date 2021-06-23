@@ -1,0 +1,44 @@
+<!DOCTYPE html>   
+<html>
+    <head>
+         <title>ID Attribute</title>
+         <style>
+             #myH1Header{
+                 background-color:lavenderblush ;
+                 color:cornflowerblue ;
+                 padding:40px ;
+                 text-align: center ;
+             }
+             #myH1Content{
+                 background-color:powderblue ;
+                 color:hotpink;
+                 padding: 40px; ;
+                 text-align:center ;
+             }
+             #myH1Footer{
+                 background-color:lemonchiffon ;
+                 color:lightcoral ;
+                 padding: 40px; ;
+                 text-align:center ;
+             }
+         </style>
+         <script>
+             function displayID() {
+                 document.getElementById("myHeader").innerHTML="Tran Mai Linh";
+             }
+         </script>
+    </head>
+    <body>
+        <button type="button" onclick="displayID();">Show text</button>
+        <h1 id="myHeader"></h1>
+        <div>
+            <h1 id="myH1Header"> My Header</h1>
+        </div>
+    <div>
+        <h1 id="myH1Content">My Content</h1>
+    </div>
+    <div>
+        <h1 id="myH1Footer">My Footer</h1>
+    </div>
+    </body>
+</html>       

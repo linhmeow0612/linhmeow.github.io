@@ -1,0 +1,97 @@
+<!DOCTYPE html>   
+<html>
+    <head>
+         <title>Form elements</title>
+         <meta charset="utf-8">
+         <style>
+             .login{
+                 color:rgb(32, 110, 255);
+                 background-color:ivory
+             }
+             table{
+                 border: 3px solid rgb(53, 53, 211);
+                 background-color: aliceblue;
+             }
+            .cars{
+                color:dodgerblue;
+                background-color: lavender;
+            }
+            .subjects{
+                color:royalblue;
+                background-color:lightcyan;
+            }
+            option{
+                color: deepskyblue;
+            }
+            hr{
+                color: darkblue;
+                border-width: 2px;
+            }
+            .lecture{
+                color:rgb(32, 110, 255);
+                background-color: floralwhite;
+
+            }
+         </style>
+    </head>
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <form action="">
+                            <h2 class="login">INFORMATION LOGIN</h2>
+                              <label for="uname">Enter Username: </label>
+                              <input type="text" name="uname" id="uname" size="45">
+                              <br>
+                              <label for="pword">Enter Password: </label>
+                              <input type="password" name="pword" id="pword" size="45">
+                               <hr>
+                               <h2 class="cars">CAR COMPANY LIST</h2>
+                                  <label for="cars">Select a car</label>
+                                  <select name="cars" id="cars" size="2">
+                                      <option value="ferrari">Ferrari</option>
+                                      <option value="mercedes">Mercedes</option>
+                                      <option value="Vinfast">Vinfast</option>
+                                      <option value="Toyota">Toyota</option>
+                                      <option value="audi">Audi</option>                                      
+                                  </select>
+                                  <hr>
+                                  <h2 class="subjects">SUBJECT LIST</h2>
+                                  <label for="subjects">Select multiple Subject:</label>
+                                  <select name="subjects" id="subjects" size="3">
+                                      <option value="Math">Math</option>
+                                      <option value="Physics">Physics</option>
+                                      <option value="Chemistry">Chemistry</option>
+                                      <option value="Science">Science</option>
+                                      <option value="English">English</option>                              
+                                  </select>      
+                                  <hr>
+                                  <h2 class="lecture">CONTENT OF LECTURE</h2>>  
+                                  <textarea name="lecture" id="lecture" cols="50" rows="10">
+                                    Tran Mai Linh
+                                    Class 11A
+                                  </textarea>  
+                                  <hr>
+                                  <fieldset>
+                                      <legend>
+                                          INFORMATION OF STUDENT
+                                      </legend>
+                                      <label for="suname">Student Name:</label>
+                                      <input type="text" id="suname" size="30">
+                                      <br>
+                                      <label for="address">Student Address:</label>
+                                      <input type="text" id="address" size="30">
+                                      <br>
+                                      <label for="tel">Phone Number:</label>
+                                      <input type="text" id="phone" size="30">
+                                      <br>
+                                </fieldset>  
+                                                                            
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>       
